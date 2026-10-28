@@ -1,0 +1,183 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SGO = Instance.new("ScreenGui")
+local dkr = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local bsl = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local tooltip = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+SGO.Name = "SGO"
+SGO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SGO.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+dkr.Name = "dkr"
+dkr.Parent = SGO
+dkr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dkr.BackgroundTransparency = 1.000
+dkr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+dkr.BorderSizePixel = 0
+dkr.Position = UDim2.new(0.3898305, 0, 0.361702114, 0)
+dkr.Size = UDim2.new(0.219602063, 0, 0.155339807, 0)
+dkr.Font = Enum.Font.SourceSansBold
+dkr.Text = "D.K.R."
+dkr.TextColor3 = Color3.fromRGB(255, 255, 255)
+dkr.TextScaled = true
+dkr.TextSize = 14.000
+dkr.TextStrokeTransparency = 0.000
+dkr.TextWrapped = true
+
+UITextSizeConstraint.Parent = dkr
+UITextSizeConstraint.MaxTextSize = 96
+
+bsl.Name = "bsl"
+bsl.Parent = SGO
+bsl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bsl.BackgroundTransparency = 1.000
+bsl.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bsl.BorderSizePixel = 0
+bsl.Position = UDim2.new(0.419307292, 0, 0.507598758, 0)
+bsl.Size = UDim2.new(0.160648495, 0, 0.0614886731, 0)
+bsl.Font = Enum.Font.SourceSansBold
+bsl.Text = "basic script loader"
+bsl.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsl.TextScaled = true
+bsl.TextSize = 14.000
+bsl.TextStrokeTransparency = 0.000
+bsl.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = bsl
+UITextSizeConstraint_2.MaxTextSize = 33
+
+tooltip.Name = "tooltip"
+tooltip.Parent = SGO
+tooltip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tooltip.BackgroundTransparency = 1.000
+tooltip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tooltip.BorderSizePixel = 0
+tooltip.Position = UDim2.new(0.249078855, 0, 0.0242177416, 0)
+tooltip.Size = UDim2.new(0.500368476, 0, 0.0841424093, 0)
+tooltip.Font = Enum.Font.SourceSansBold
+tooltip.Text = "precargando assets, por favor se paciente."
+tooltip.TextColor3 = Color3.fromRGB(255, 255, 255)
+tooltip.TextScaled = true
+tooltip.TextSize = 14.000
+tooltip.TextStrokeTransparency = 0.000
+tooltip.TextTransparency = 1.000
+tooltip.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = tooltip
+UITextSizeConstraint_3.MaxTextSize = 19
+
+-- Scripts:
+
+local function IEVU_fake_script() -- dkr.rfv 
+	local script = Instance.new('LocalScript', dkr)
+
+	local fvr = script.Parent
+	wait(5)
+	fvr:Destroy()
+end
+coroutine.wrap(IEVU_fake_script)()
+local function KNUU_fake_script() -- bsl.bsc 
+	local script = Instance.new('LocalScript', bsl)
+
+	local bsc = script.Parent
+	wait(5)
+	bsc:Destroy()
+end
+coroutine.wrap(KNUU_fake_script)()
+local function BNTAHU_fake_script() -- tooltip.tlp 
+	local script = Instance.new('LocalScript', tooltip)
+
+	local tooltip = script.Parent
+	wait(6)
+	tooltip.TextTransparency = 0
+	wait(1)
+	tooltip.Text = "precargando assets, por favor se paciente.."
+	wait(1)
+	tooltip.Text = "precargando assets, por favor se paciente..."
+	wait(1)
+	tooltip.Text = "precargando assets, por favor se paciente."
+	wait(1)
+	tooltip.Text = "precargando assets, por favor se paciente.."
+	wait(1)
+	tooltip.Text = "precargando assets, por favor se paciente..."
+	wait(1)
+	tooltip:Destroy()
+end
+coroutine.wrap(BNTAHU_fake_script)()
+local function FKPKQ_fake_script() -- SGO.source 
+	local script = Instance.new('LocalScript', SGO)
+
+	wait(12)
+	local Lighting = game:GetService("Lighting")
+	local RunService = game:GetService("RunService")
+	local Terrain = workspace:FindFirstChildWhichIsA("Terrain")
+	
+	local function aplicarOptimizacion()
+		if Terrain then
+			Terrain.WaterWaveSize = 0
+			Terrain.WaterWaveSpeed = 0
+			Terrain.WaterReflectance = 0
+			Terrain.WaterTransparency = 1
+		end
+		
+		Lighting.GlobalShadows = false
+		Lighting.FogEnd = 9e9
+		Lighting.FogStart = 9e9
+		settings().Rendering.QualityLevel = 1
+		
+		for _, v in pairs(game:GetDescendants()) do
+			if v:IsA("BasePart") then
+				v.CastShadow = false
+				v.Material = Enum.Material.Plastic
+				v.Reflectance = 0
+				v.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+				v.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+				v.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+				v.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+				v.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+				v.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+			elseif v:IsA("Decal") then
+				v.Transparency = 1
+				v.Texture = ""
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			end
+		end
+		
+		for _, v in pairs(Lighting:GetDescendants()) do
+			if v:IsA("PostEffect") then
+				v.Enabled = false
+			end
+		end
+	end
+	
+	workspace.DescendantAdded:Connect(function(child)
+		task.spawn(function()
+			if child:IsA("ForceField") or child:IsA("Sparkles") or child:IsA("Smoke") or child:IsA("Fire") or child:IsA("Beam") then
+				RunService.Heartbeat:Wait()
+				child:Destroy()
+			elseif child:IsA("BasePart") then
+				child.CastShadow = false
+			end
+		end)
+	end)
+	
+	task.spawn(function()
+		aplicarOptimizacion()
+		
+		while true do
+			task.wait(600)
+			aplicarOptimizacion()
+		end
+	end)
+end
+coroutine.wrap(FKPKQ_fake_script)()
