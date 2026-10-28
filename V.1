@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local SGO = Instance.new("ScreenGui")
 local dkr = Instance.new("TextLabel")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
@@ -23,7 +18,7 @@ dkr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 dkr.BackgroundTransparency = 1.000
 dkr.BorderColor3 = Color3.fromRGB(0, 0, 0)
 dkr.BorderSizePixel = 0
-dkr.Position = UDim2.new(0.3898305, 0, 0.361702114, 0)
+dkr.Position = UDim2.new(0.389093578, 0, 0.395174921, 0)
 dkr.Size = UDim2.new(0.219602063, 0, 0.155339807, 0)
 dkr.Font = Enum.Font.SourceSansBold
 dkr.Text = "D.K.R."
@@ -42,7 +37,7 @@ bsl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 bsl.BackgroundTransparency = 1.000
 bsl.BorderColor3 = Color3.fromRGB(0, 0, 0)
 bsl.BorderSizePixel = 0
-bsl.Position = UDim2.new(0.419307292, 0, 0.507598758, 0)
+bsl.Position = UDim2.new(0.418570369, 0, 0.541071534, 0)
 bsl.Size = UDim2.new(0.160648495, 0, 0.0614886731, 0)
 bsl.Font = Enum.Font.SourceSansBold
 bsl.Text = "basic script loader"
@@ -61,7 +56,7 @@ tooltip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 tooltip.BackgroundTransparency = 1.000
 tooltip.BorderColor3 = Color3.fromRGB(0, 0, 0)
 tooltip.BorderSizePixel = 0
-tooltip.Position = UDim2.new(0.249078855, 0, 0.0242177416, 0)
+tooltip.Position = UDim2.new(0.249078855, 0, -0.020412663, 0)
 tooltip.Size = UDim2.new(0.500368476, 0, 0.0841424093, 0)
 tooltip.Font = Enum.Font.SourceSansBold
 tooltip.Text = "precargando assets, por favor se paciente."
@@ -77,23 +72,61 @@ UITextSizeConstraint_3.MaxTextSize = 19
 
 -- Scripts:
 
-local function IEVU_fake_script() -- dkr.rfv 
+local function PJVA_fake_script() -- dkr.rfv 
 	local script = Instance.new('LocalScript', dkr)
 
 	local fvr = script.Parent
 	wait(5)
 	fvr:Destroy()
 end
-coroutine.wrap(IEVU_fake_script)()
-local function KNUU_fake_script() -- bsl.bsc 
+coroutine.wrap(PJVA_fake_script)()
+local function CCSD_fake_script() -- dkr.Rainbow 
+	local script = Instance.new('Script', dkr)
+
+	while true do
+	 script.Parent.TextColor3 = Color3.new (255, 176, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (0, 255, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (255, 0, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (170, 85, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (106, 57, 9)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (0, 16, 176)
+	 wait(.1)
+	end
+end
+coroutine.wrap(CCSD_fake_script)()
+local function NAHQ_fake_script() -- bsl.bsc 
 	local script = Instance.new('LocalScript', bsl)
 
 	local bsc = script.Parent
 	wait(5)
 	bsc:Destroy()
 end
-coroutine.wrap(KNUU_fake_script)()
-local function BNTAHU_fake_script() -- tooltip.tlp 
+coroutine.wrap(NAHQ_fake_script)()
+local function UPWVDH_fake_script() -- bsl.Rainbow 
+	local script = Instance.new('Script', bsl)
+
+	while true do
+	 script.Parent.TextColor3 = Color3.new (255, 176, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (0, 255, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (255, 0, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (170, 85, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (106, 57, 9)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (0, 16, 176)
+	 wait(.1)
+	end
+end
+coroutine.wrap(UPWVDH_fake_script)()
+local function KZHKK_fake_script() -- tooltip.tlp 
 	local script = Instance.new('LocalScript', tooltip)
 
 	local tooltip = script.Parent
@@ -112,8 +145,27 @@ local function BNTAHU_fake_script() -- tooltip.tlp
 	wait(1)
 	tooltip:Destroy()
 end
-coroutine.wrap(BNTAHU_fake_script)()
-local function FKPKQ_fake_script() -- SGO.source 
+coroutine.wrap(KZHKK_fake_script)()
+local function NYTI_fake_script() -- tooltip.Rainbow 
+	local script = Instance.new('Script', tooltip)
+
+	while true do
+	 script.Parent.TextColor3 = Color3.new (255, 176, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (0, 255, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (255, 0, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (170, 85, 0)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (106, 57, 9)
+	 wait(.1)
+	 script.Parent.TextColor3 = Color3.new (0, 16, 176)
+	 wait(.1)
+	end
+end
+coroutine.wrap(NYTI_fake_script)()
+local function DNFE_fake_script() -- SGO.source 
 	local script = Instance.new('LocalScript', SGO)
 
 	wait(12)
@@ -175,9 +227,54 @@ local function FKPKQ_fake_script() -- SGO.source
 		aplicarOptimizacion()
 		
 		while true do
-			task.wait(600)
+			task.wait(300)
 			aplicarOptimizacion()
 		end
 	end)
 end
-coroutine.wrap(FKPKQ_fake_script)()
+coroutine.wrap(DNFE_fake_script)()
+-- SGO.Dragify is disabled.
+local function RPQS_fake_script() -- SGO.LC_Rainbow 
+	local script = Instance.new('LocalScript', SGO)
+
+	local sayingstuff = Instance.new("ScreenGui")
+	sayingstuff.Name = "CreditsAndAuthentication"
+	sayingstuff.ResetOnSpawn = false
+	sayingstuff.Parent = game:GetService"Players".LocalPlayer:FindFirstChildOfClass("PlayerGui")
+	local sayingstuff3 = Instance.new("TextLabel",sayingstuff)
+	sayingstuff3.BackgroundTransparency = 1
+	sayingstuff3.BorderSizePixel = 0
+	sayingstuff3.Text = ""
+	sayingstuff3.Font = "SourceSansProBold"
+	sayingstuff3.TextScaled = true
+	sayingstuff3.TextStrokeTransparency = 0
+	sayingstuff3.Size = UDim2.new(.8,0,.2,0)
+	sayingstuff3.AnchorPoint = Vector2.new(.5,1)
+	sayingstuff3.Position = UDim2.new(.5,0,1,0)
+	local ding = Instance.new("Sound")
+	ding.Name = "Ding!"
+	ding.Volume = 0.2
+	ding.SoundId = "rbxassetid://5035412139"
+	ding.Looped = false
+	ding.Playing = true
+	ding.Parent = sayingstuff
+	local text = "Bienvenido Soldier Boy!"
+	coroutine.resume(coroutine.create(function()
+		for i = 1,string.len(text) do
+			game:GetService("RunService").RenderStepped:Wait()
+			sayingstuff3.Text = string.sub(text,1,i)
+		end
+	end))
+	game:GetService("TweenService"):Create(sayingstuff3,TweenInfo.new(7,Enum.EasingStyle.Quad,Enum.EasingDirection.Out,0,false,3.5),{AnchorPoint = Vector2.new(.5,0)}):Play()
+	game:GetService("Debris"):AddItem(sayingstuff,4.5)
+	coroutine.resume(coroutine.create(function()
+		while true do
+			for i = 0,1,(1/60) do
+				game:GetService("RunService").RenderStepped:Wait()
+				sayingstuff3.TextColor3 = Color3.fromHSV(0, 0, 1)
+			end
+		end
+	end))
+	
+end
+coroutine.wrap(RPQS_fake_script)()
